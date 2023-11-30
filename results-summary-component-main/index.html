@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top:25px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .body{
+      background-color: white;
+      width:375px;
+      font-family:Hanken Grotesk ;
+    }
+    .purple-bit{
+      width:375px;
+      background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%) );
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      color:hsl(241, 100%, 89%);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+    .result{
+      padding-top:8%;
+      padding-bottom:8%;
+    }
+    .result-number{
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+      border-radius:50%;
+      width:150px;
+      height:150px;
+      margin-left:30%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    .number{
+      color:white;
+      font-size:40pt;
+    }
+    .great{
+      padding:5%;
+      line-height:20px;
+    }
+    .great-bruh{
+      color:white;
+      font-size:16pt;
+    }
+    .stats{
+      padding-left:5%;
+      padding-right:5%;
+    }
+    .summary{
+      padding-top:8%;
+      padding-bottom:8%;
+    }
+    .reaction{
+      background-color:hsla(0, 100%, 67%, 10%);
+      padding:4%;
+      margin-bottom:20px;
+      border-radius: 10px;
+    }
+    .stat-number{
+      float:right;
+      margin-top:6px;
+    }
+    .stats-1{
+      color:hsl(224, 30%, 27%);
+    }
+    .memory{
+      background-color:hsla(39, 100%, 56%, 10%);
+      padding:4%;
+      margin-bottom:20px;
+      border-radius: 10px;
+    }
+    .verbal{
+      background-color:hsla(166, 100%, 37%,10%);
+      padding:4%;
+      margin-bottom:20px;
+      border-radius: 10px;
+    }
+    .visual{
+      background-color:hsla(234, 85%, 45%, 10%);
+      padding:4%;
+      border-radius: 10px;
+      margin-bottom:30px;
+    }
+    .continue{
+      text-align:center;
+      margin-bottom:20px;
+      padding-top:5%;
+      padding-bottom:5%;
+      padding-left:40%;
+      padding-right:40%;
+      border-radius: 27px;
+      background-color:hsl(224, 30%, 27%);
+      color:white;
+      text-decoration:none;
+    }
+    .stats-1{
+      color:hsla(224, 30%, 27%, 50%);
+    }
+    .q{
+      margin-left:12%;
+      margin-right:12%;
+    }
+    @media screen and (min-width: 800px){
+      body{
+        background-color:hsl(221, 100%, 96%);
+      }
+      .body{
+        display:flex;
+        width:60%;
+        flex-direction:row;
+        justify-content: center;
+        margin-top:7%;
+        background-color:white;
+        margin:7% auto;
+      }
+      .purple-bit{
+        border-radius: 40px;
+        margin-left:0%;
+      }
+      .great-bruh{
+        font-size:20pt;
+      }
+      .q{
+        margin-left:17%;
+        margin-right:17%;
+        margin-bottom:10%;
+      }
+      .result-number{
+        background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        border-radius:50%;
+        width:175px;
+        height:175px;
+        margin-left:27.5%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+      .stats{
+        padding-top:2%;
+        width:20%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="body">
+    <div class="purple-bit">
+      <div class="result">
+        Your Result
+      </div>
+      <div class="result-number">
+        <p><span class="number">76</span><br>of 100</p>
+      </div>
+      <div class="great">
+        <p class="great-bruh">Great</p>
+        <p class="q">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+    </div>
+    <div class="stats">
+      <div class="summary">Summary</div>
+      <div class="reaction"> <img src="assets/images/icon-reaction.svg">&nbsp;&nbsp;&nbsp;Reaction <span class="stat-number">80 <span class="stats-1">/ 100</span></span></div>
+      <div class="memory"><img src="assets/images/icon-memory.svg">&nbsp;&nbsp;&nbsp;Memory <span class="stat-number">92 <span class="stats-1">/ 100</span></span></div>
+      <div class="verbal"><img src="assets/images/icon-verbal.svg">&nbsp;&nbsp;&nbsp;Verbal<span class="stat-number">61 <span class="stats-1">/ 100</span></span></div>
+      <div class="visual"><img src="assets/images/icon-visual.svg">&nbsp;&nbsp;&nbsp;Visual<span class="stat-number">72 <span class="stats-1">/ 100</span></span></div>
+      <a href="#" class="continue">Continue</a>
+    </div>
+  </div>
+  <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Levi Jackson</a>.
+    </div>
+</body>
+</html>
